@@ -103,7 +103,7 @@ internal class Game
 
     private void SaveScore(MenuItems item, int score)
     {
-        Score userScore = new(MenuItems.Multiplication, score);
+        Score userScore = new(item, score);
         MockDatabase.Scores.Add(userScore);
 
         userScore.ShowScore();
